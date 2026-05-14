@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barrierefreiheitserklärung – Stundara</title>
+  <meta name="description" content="Erklärung zur Barrierefreiheit der Stundara-Website nach WCAG 2.2 AA, WZG und BaFG.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand" aria-label="Stundara, Startseite">
+        <svg class="brand__logo" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <path d="M8 4 H24 V8 C24 12 18 14 18 16 C18 18 24 20 24 24 V28 H8 V24 C8 20 14 18 14 16 C14 14 8 12 8 8 Z" fill="none" stroke="#3F5A48" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M11 6 H21 M11 26 H21" stroke="#3F5A48" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="16" cy="16" r="1.4" fill="#B05C2E"/>
+        </svg>
+        <span>Stundara</span>
+      </a>
+      <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Hauptmenü öffnen oder schließen">
+        <span aria-hidden="true">☰</span><span>Menü</span>
+      </button>
+      <nav id="primary-nav" aria-label="Hauptnavigation">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Start</a></li>
+          <li><a class="site-nav__link" href="about.html">Über uns</a></li>
+          <li><a class="site-nav__link" href="pricing.html">Preise</a></li>
+          <li><a class="site-nav__link" href="contact.html">Kontakt</a></li>
+          <li><a class="btn btn--primary" href="pricing.html">Pro testen</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container article">
+        <h1>Barrierefreiheitserklärung</h1>
+        <p>
+          Stundara e. U. ist bestrebt, alle eigenen digitalen Angebote im Einklang mit den
+          Web Content Accessibility Guidelines (WCAG) 2.2 Konformitätsstufe AA sowie dem
+          österreichischen Web-Zugänglichkeits-Gesetz (WZG) und dem Barrierefreiheitsgesetz (BaFG)
+          zugänglich zu gestalten. Diese Erklärung gilt für die unter <em>stundara.example</em>
+          veröffentlichte Website samt aller Unterseiten.
+        </p>
+
+        <nav class="toc" aria-label="Inhaltsverzeichnis">
+          <h2>Inhalt</h2>
+          <ul>
+            <li><a href="#status">Stand der Vereinbarkeit</a></li>
+            <li><a href="#unbarrierefrei">Nicht barrierefreie Inhalte</a></li>
+            <li><a href="#feedback">Feedback &amp; Kontakt</a></li>
+            <li><a href="#durchsetzung">Durchsetzungsverfahren</a></li>
+            <li><a href="#methodik">Bewertungs-Methodik</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="status">Stand der Vereinbarkeit</h2>
+        <p>
+          Die Website ist nach unserer Eigenbewertung <strong>vollständig konform</strong> mit
+          WCAG 2.2 Stufe AA. Die Bewertung erfolgte am <time datetime="2026-05-14">14. Mai 2026</time>
+          durch interne automatisierte und manuelle Prüfung.
+        </p>
+        <p>
+          Geprüfte Erfolgskriterien der WCAG 2.2 umfassen unter anderem:
+        </p>
+        <ul>
+          <li>Wahrnehmbar: Alt-Texte (1.1.1), Kontrast 4,5:1 (1.4.3), Skalierbarkeit auf 200&nbsp;% (1.4.4), Reflow (1.4.10)</li>
+          <li>Bedienbar: Tastaturzugänglichkeit (2.1.1), kein Tastaturfallen (2.1.2), Skip-Link (2.4.1),
+            Fokus-Reihenfolge (2.4.3), <em>Focus Appearance</em> (2.4.11, neu in WCAG 2.2),
+            <em>Target Size Minimum</em> 24×24 px (2.5.8, neu in WCAG 2.2),
+            <em>Dragging Movements</em> (2.5.7, neu in WCAG 2.2)</li>
+          <li>Verständlich: Sprache der Seite (3.1.1, <code>lang="de-AT"</code>),
+            <em>Consistent Help</em> (3.2.6, neu in WCAG 2.2),
+            präzise Form-Labels (3.3.2), Fehler-Identifikation und -Vorschläge (3.3.1, 3.3.3)</li>
+          <li>Robust: gültiges HTML5 (4.1.1), Name/Rolle/Wert für UI-Komponenten (4.1.2),
+            Statusmeldungen über ARIA Live-Regions (4.1.3)</li>
+        </ul>
+
+        <h2 id="unbarrierefrei">Nicht barrierefreie Inhalte</h2>
+        <p>
+          Folgende Inhalte sind möglicherweise eingeschränkt zugänglich:
+        </p>
+        <ul>
+          <li>
+            <strong>Demo-Video</strong> (sofern eingebunden): Liegt zum Zeitpunkt der Veröffentlichung
+            ohne synchron produzierte Audiodeskription vor. Eine textbasierte Alternativbeschreibung
+            ist auf der jeweiligen Seite verfügbar.
+            Korrekturmaßnahme: Untertitelung und Audiodeskription bis Q3/2026.
+          </li>
+          <li>
+            <strong>Schematische SVG-Illustrationen</strong> im Hero-Bereich: dienen ausschließlich
+            der Dekoration und sind mit <code>aria-hidden="true"</code> bzw.
+            <code>role="img"</code> samt <code>aria-label</code> versehen. Inhaltlich gleichwertige
+            Texte stehen unmittelbar nebeneinander.
+          </li>
+        </ul>
+        <p>
+          Sollten Ihnen weitere Hindernisse auffallen, freuen wir uns über einen Hinweis
+          (siehe nächster Abschnitt).
+        </p>
+
+        <h2 id="feedback">Feedback und Kontakt</h2>
+        <p>
+          Bitte teilen Sie uns Probleme bei der Nutzung dieser Website mit. Wir bemühen uns,
+          binnen sechs Wochen auf Ihre Rückmeldung zu reagieren und unbarrierefreie Inhalte zu
+          beheben.
+        </p>
+        <ul>
+          <li>E-Mail: <a href="mailto:zugang@stundara.example">zugang@stundara.example</a></li>
+          <li>Postanschrift: Stundara e. U., Musterplatz 1, 1010 Wien, Österreich</li>
+          <li>Telefon: <a href="tel:+4319991234">+43 1 999 1234</a> (Werktags 9–17 Uhr)</li>
+        </ul>
+
+        <h2 id="durchsetzung">Durchsetzungsverfahren</h2>
+        <p>
+          Sind Sie mit unserer Antwort nicht zufrieden oder erhalten Sie binnen sechs Wochen
+          keine Reaktion, können Sie sich an folgende Stellen wenden:
+        </p>
+        <ul>
+          <li>
+            <strong>Schlichtungsverfahren beim Sozialministeriumservice</strong> nach dem
+            Bundes-Behindertengleichstellungsgesetz (BGStG):
+            <a href="https://www.sozialministeriumservice.at" rel="external">www.sozialministeriumservice.at</a>
+          </li>
+          <li>
+            <strong>Beschwerde an die Marktüberwachungsbehörde</strong> nach BaFG: das Sozialministerium
+            (für privatwirtschaftliche Anbieter:innen)
+          </li>
+          <li>
+            <strong>Forschungsförderungsgesellschaft (FFG)</strong> als Monitoring-Stelle für
+            Websites öffentlicher Stellen (WZG § 5)
+          </li>
+        </ul>
+
+        <h2 id="methodik">Bewertungs-Methodik</h2>
+        <p>
+          Die Konformität wurde durch eine Kombination der folgenden Verfahren festgestellt:
+        </p>
+        <ol>
+          <li><strong>Automatisierte Prüfung</strong> mit <em>axe DevTools</em>, <em>WAVE</em>
+            und <em>Google Lighthouse</em> – Berichte liegen im Repository unter
+            <code>/docs/a11y-evidence/</code>.</li>
+          <li><strong>Manuelle Tastatur-Navigation</strong> ausschließlich mit Tab, Shift+Tab, Enter,
+            Space, ESC und Pfeiltasten.</li>
+          <li><strong>Screenreader-Test</strong> mit NVDA (Windows) und VoiceOver (macOS/iOS).</li>
+          <li><strong>Zoom-Test</strong> bis 200 % ohne Verlust von Inhalt oder Funktion.</li>
+          <li><strong>Reduced-Motion-Test</strong> mit aktiviertem
+            <code>prefers-reduced-motion</code>.</li>
+        </ol>
+
+        <p>
+          Diese Erklärung wurde am <time datetime="2026-05-14">14. Mai 2026</time> erstellt
+          und zuletzt am selben Tag überprüft.
+        </p>
+        <p>
+          <strong>Rechtliche Grundlage:</strong> § 4 Web-Zugänglichkeits-Gesetz (WZG) in
+          Verbindung mit § 14 Barrierefreiheitsgesetz (BaFG), § 6 Bundes-Behindertengleichstellungs­gesetz
+          (BGStG) sowie WCAG 2.2 / EN 301 549.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container site-footer__grid">
+      <div class="site-footer__col">
+        <h2>Produkt</h2>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="about.html">Über uns</a></li>
+          <li><a href="pricing.html">Preise</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h2>Rechtliches</h2>
+        <ul>
+          <li><a href="imprint.html">Impressum</a></li>
+          <li><a href="privacy.html">Datenschutzerklärung</a></li>
+          <li><a href="license.html">Lizenz &amp; AGB</a></li>
+          <li><a href="accessibility.html" aria-current="page">Barrierefreiheitserklärung</a></li>
+          <li><a href="credits.html">Urheberrechtshinweise</a></li>
+          <li><a href="#" data-cookie-reopen>Cookie-Einstellungen</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h2>Kontakt</h2>
+        <ul>
+          <li>Stundara e. U.</li>
+          <li>Musterplatz 1, 1010 Wien</li>
+          <li><a href="mailto:kontakt@stundara.example">kontakt@stundara.example</a></li>
+          <li><a href="tel:+4319991234">+43 1 999 1234</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container site-footer__bottom">
+      <p>&copy; 2026 Stundara e. U. Alle Rechte vorbehalten.</p>
+      <p>Made in Wien · WCAG 2.2 AA</p>
+    </div>
+  </footer>
+
+  <aside class="cookie-banner" id="cookie-banner" role="dialog" aria-labelledby="cookie-banner-title" aria-describedby="cookie-banner-desc" tabindex="-1" hidden>
+    <div class="container cookie-banner__grid">
+      <div>
+        <h2 id="cookie-banner-title" class="visually-hidden">Cookie-Einstellungen</h2>
+        <p id="cookie-banner-desc">Wir setzen ausschließlich funktional notwendige Cookies. Für anonyme Reichweitenmessung fragen wir um deine Einwilligung. Mehr in der <a href="privacy.html">Datenschutzerklärung</a>.</p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button type="button" class="btn btn--ghost" data-consent="necessary">Nur notwendige</button>
+        <button type="button" class="btn btn--primary" data-consent="all">Statistik erlauben</button>
+      </div>
+    </div>
+  </aside>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
