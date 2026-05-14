@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stundara – Zeit zurückgewinnen | Zeiterfassung für Freelancer</title>
+  <meta name="description" content="Stundara ist eine schlichte Zeiterfassungs-Software für Freelancer und Solo-Selbständige. Stoppuhr-Timer, Projekt-Tagging und Rechnungs-Export. Made in Wien.">
+  <meta name="theme-color" content="#3F5A48">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand" aria-label="Stundara, Startseite">
+        <svg class="brand__logo" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <title>Sanduhr-Logo</title>
+          <path d="M8 4 H24 V8 C24 12 18 14 18 16 C18 18 24 20 24 24 V28 H8 V24 C8 20 14 18 14 16 C14 14 8 12 8 8 Z"
+                fill="none" stroke="#3F5A48" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M11 6 H21 M11 26 H21" stroke="#3F5A48" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="16" cy="16" r="1.4" fill="#B05C2E"/>
+        </svg>
+        <span>Stundara</span>
+      </a>
+
+      <button class="site-nav__toggle" type="button"
+              aria-expanded="false" aria-controls="primary-nav"
+              aria-label="Hauptmenü öffnen oder schließen">
+        <span aria-hidden="true">☰</span>
+        <span>Menü</span>
+      </button>
+
+      <nav id="primary-nav" aria-label="Hauptnavigation">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html" aria-current="page">Start</a></li>
+          <li><a class="site-nav__link" href="about.html">Über uns</a></li>
+          <li><a class="site-nav__link" href="pricing.html">Preise</a></li>
+          <li><a class="site-nav__link" href="contact.html">Kontakt</a></li>
+          <li><a class="btn btn--primary" href="pricing.html">Pro testen</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div>
+          <h1 id="hero-title">Zeit zurückgewinnen.</h1>
+          <p class="hero__lede">
+            Stundara ist eine schlichte Zeiterfassung für Freelancer und Solo-Selbständige.
+            Klare Stoppuhr, ehrliche Statistiken und ein Rechnungs-Export, der einfach funktioniert.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="pricing.html">Kostenlos starten</a>
+            <a class="btn btn--secondary" href="#features">Funktionen ansehen</a>
+          </div>
+          <p><small>Keine Kreditkarte nötig. Free-Plan dauerhaft kostenlos.</small></p>
+        </div>
+
+        <figure aria-hidden="true">
+          <svg viewBox="0 0 360 280" role="img" aria-label="Skizzierte Darstellung der Stundara-Oberfläche mit Stoppuhr-Element">
+            <title>Stundara-Oberfläche, schematisch</title>
+            <rect x="0" y="0" width="360" height="280" rx="16" fill="#FFFFFF" stroke="#C8C2B0" stroke-width="2"/>
+            <rect x="20" y="20" width="320" height="40" rx="8" fill="#F0EBDD"/>
+            <circle cx="42" cy="40" r="8" fill="#B05C2E"/>
+            <rect x="60" y="34" width="140" height="12" rx="3" fill="#3F5A48"/>
+            <rect x="20" y="80" width="220" height="64" rx="10" fill="#F0EBDD"/>
+            <text x="36" y="118" font-family="Lora, serif" font-size="32" fill="#1F2421">02:14:37</text>
+            <rect x="252" y="92" width="88" height="44" rx="10" fill="#3F5A48"/>
+            <text x="276" y="121" font-family="Inter, sans-serif" font-size="14" fill="#FAF8F3">Stoppen</text>
+            <rect x="20" y="160" width="320" height="14" rx="3" fill="#E0D8C2"/>
+            <rect x="20" y="160" width="200" height="14" rx="3" fill="#3F5A48"/>
+            <rect x="20" y="190" width="120" height="10" rx="3" fill="#D7CFB7"/>
+            <rect x="20" y="210" width="180" height="10" rx="3" fill="#D7CFB7"/>
+            <rect x="20" y="230" width="90" height="10" rx="3" fill="#D7CFB7"/>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <h2 id="features-title">Funktionen, die einer Solo-Selbständigen wirklich helfen</h2>
+        <p>Stundara ist auf einen Anwendungsfall optimiert: ein:e Person, viele Projekte, ehrliche Stunden.</p>
+
+        <div class="grid grid--features" role="list">
+          <article class="card" role="listitem" aria-labelledby="f1-title">
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="13" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 9 V13 L15 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M10 3 H14 M12 3 V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <h3 id="f1-title" class="card__title">Stoppuhr pro Projekt</h3>
+            <p>Ein Klick startet, ein Klick stoppt. Mehrere Timer laufen ist nicht vorgesehen – damit du nicht doppelt verrechnest.</p>
+          </article>
+
+          <article class="card" role="listitem" aria-labelledby="f2-title">
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M3 9 H21" stroke="currentColor" stroke-width="2"/>
+              <circle cx="8" cy="14" r="1.5" fill="currentColor"/>
+              <rect x="11" y="13" width="7" height="2" fill="currentColor"/>
+            </svg>
+            <h3 id="f2-title" class="card__title">Rechnungs-Export</h3>
+            <p>PDF- und CSV-Export pro Kunde oder Zeitraum. Vorlagen für Pauschalrechnungen und Stundennachweise.</p>
+          </article>
+
+          <article class="card" role="listitem" aria-labelledby="f3-title">
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M4 19 V11 L8 7 L12 11 L16 6 L20 10 V19 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M4 19 H20" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <h3 id="f3-title" class="card__title">Wochenrückblick</h3>
+            <p>Statistiken, die nicht überfordern. Sieh in einer Minute, wo deine Stunden hingingen – und was du an den Kunden verrechnen kannst.</p>
+          </article>
+
+          <article class="card" role="listitem" aria-labelledby="f4-title">
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M7 9 H17 M7 13 H13 M7 17 H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <h3 id="f4-title" class="card__title">Tags &amp; Projekte</h3>
+            <p>Frei wählbare Tags pro Eintrag. Filtere nach Kunde, Vertragsphase oder Tätigkeit.</p>
+          </article>
+
+          <article class="card" role="listitem" aria-labelledby="f5-title">
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 3 L4 7 V13 C4 17 8 20 12 21 C16 20 20 17 20 13 V7 Z"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M9 12 L11 14 L15 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <h3 id="f5-title" class="card__title">Daten bleiben dein</h3>
+            <p>Lokale Speicherung optional, Cloud-Sync verschlüsselt. Export jederzeit nach Art. 20 DSGVO.</p>
+          </article>
+
+          <article class="card" role="listitem" aria-labelledby="f6-title">
+            <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M8 12 L11 15 L17 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <h3 id="f6-title" class="card__title">WCAG 2.2 AA</h3>
+            <p>Die gesamte Anwendung ist tastaturbedienbar, screenreader-tauglich und barrierefrei – nicht nur diese Website.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust / Manifest -->
+    <section class="section" style="background: var(--c-bg-alt);" aria-labelledby="manifest-title">
+      <div class="container article">
+        <h2 id="manifest-title">Unser Versprechen</h2>
+        <p>
+          Stundara wurde von einer Solo-Selbständigen für Solo-Selbständige gebaut. Wir verkaufen kein
+          Add-on, kein Up-Sell-Bundle und keine Daten. Was wir verkaufen, ist eine ruhige Software,
+          die nicht versucht, mehr zu sein als sie ist.
+        </p>
+        <ul>
+          <li><strong>Kein Tracking durch Dritte.</strong> Statistik nutzt selbst-gehostetes Plausible, ohne IP-Speicherung.</li>
+          <li><strong>Sitz in Wien.</strong> Server in der EU. DSGVO und § 1 DSG gelten direkt – nicht nur „nach besten Kräften“.</li>
+          <li><strong>Datenexport jederzeit.</strong> CSV und JSON, einen Klick entfernt.</li>
+          <li><strong>Faire Kündigung.</strong> Monatsabo monatlich, ohne Hindernisbahn.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Preis-Teaser -->
+    <section class="section" aria-labelledby="pricing-teaser-title">
+      <div class="container">
+        <h2 id="pricing-teaser-title">Preis-Modell</h2>
+        <p>Eine kostenlose Variante für Einsteiger, ein Pro-Plan für alle, die ihre Stunden professionell abrechnen wollen.</p>
+        <div class="grid grid--pricing">
+          <article class="price-card" aria-labelledby="plan-free">
+            <h3 id="plan-free">Free</h3>
+            <p class="price-card__price">€ 0 <span>für immer</span></p>
+            <ul class="price-card__list">
+              <li>Stoppuhr für bis zu 3 Projekte</li>
+              <li>Lokale Speicherung</li>
+              <li>Tag- und Projekt-Filter</li>
+              <li>CSV-Export (manuell)</li>
+            </ul>
+            <a class="btn btn--secondary" href="pricing.html">Free starten</a>
+          </article>
+
+          <article class="price-card price-card--featured" aria-labelledby="plan-pro">
+            <h3 id="plan-pro">Pro</h3>
+            <p class="price-card__price">€ 9 <span>/ Monat</span></p>
+            <ul class="price-card__list">
+              <li>Alles aus Free</li>
+              <li>Unbegrenzte Projekte</li>
+              <li>PDF-Rechnungen mit Vorlagen</li>
+              <li>Cloud-Sync zwischen Geräten</li>
+              <li>Backup-Versionierung 30 Tage</li>
+            </ul>
+            <a class="btn btn--primary" href="pricing.html">Pro 14 Tage testen</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container site-footer__grid">
+      <div class="site-footer__col">
+        <h2>Produkt</h2>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="about.html">Über uns</a></li>
+          <li><a href="pricing.html">Preise</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h2>Rechtliches</h2>
+        <ul>
+          <li><a href="imprint.html">Impressum</a></li>
+          <li><a href="privacy.html">Datenschutzerklärung</a></li>
+          <li><a href="license.html">Lizenz &amp; AGB</a></li>
+          <li><a href="accessibility.html">Barrierefreiheitserklärung</a></li>
+          <li><a href="credits.html">Urheberrechtshinweise</a></li>
+          <li><a href="#" data-cookie-reopen>Cookie-Einstellungen</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h2>Kontakt</h2>
+        <ul>
+          <li>Stundara e. U.</li>
+          <li>Musterplatz 1, 1010 Wien</li>
+          <li><a href="mailto:kontakt@stundara.example">kontakt@stundara.example</a></li>
+          <li><a href="tel:+4319991234">+43 1 999 1234</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container site-footer__bottom">
+      <p>&copy; 2026 Stundara e. U. Alle Rechte vorbehalten.</p>
+      <p>Made in Wien · WCAG 2.2 AA</p>
+    </div>
+  </footer>
+
+  <aside class="cookie-banner" id="cookie-banner" role="dialog"
+         aria-labelledby="cookie-banner-title" aria-describedby="cookie-banner-desc" tabindex="-1" hidden>
+    <div class="container cookie-banner__grid">
+      <div>
+        <h2 id="cookie-banner-title" class="visually-hidden">Cookie-Einstellungen</h2>
+        <p id="cookie-banner-desc">
+          Wir setzen ausschließlich funktional notwendige Cookies. Für anonyme Reichweitenmessung (selbst-gehostetes Plausible)
+          fragen wir um deine Einwilligung. Mehr in der
+          <a href="privacy.html">Datenschutzerklärung</a>.
+        </p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button type="button" class="btn btn--ghost" data-consent="necessary">Nur notwendige</button>
+        <button type="button" class="btn btn--primary" data-consent="all">Statistik erlauben</button>
+      </div>
+    </div>
+  </aside>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
