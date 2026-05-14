@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bestellung abschließen – Stundara</title>
+  <meta name="description" content="Mock-Checkout für die Stundara Pro-Lizenz oder den Free-Plan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,400&display=swap">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header" role="banner">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand" aria-label="Stundara, Startseite">
+        <svg class="brand__logo" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <path d="M8 4 H24 V8 C24 12 18 14 18 16 C18 18 24 20 24 24 V28 H8 V24 C8 20 14 18 14 16 C14 14 8 12 8 8 Z" fill="none" stroke="#3F5A48" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M11 6 H21 M11 26 H21" stroke="#3F5A48" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="16" cy="16" r="1.4" fill="#B05C2E"/>
+        </svg>
+        <span>Stundara</span>
+      </a>
+      <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Hauptmenü öffnen oder schließen">
+        <span aria-hidden="true">☰</span><span>Menü</span>
+      </button>
+      <nav id="primary-nav" aria-label="Hauptnavigation">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">Start</a></li>
+          <li><a class="site-nav__link" href="about.html">Über uns</a></li>
+          <li><a class="site-nav__link" href="pricing.html">Preise</a></li>
+          <li><a class="site-nav__link" href="contact.html">Kontakt</a></li>
+          <li><a class="btn btn--primary" href="pricing.html">Pro testen</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1>Bestellung abschließen</h1>
+        <p class="hero__lede">
+          Sie sind nur einen Klick davon entfernt, Ihre Zeit zurückzugewinnen. Bitte prüfen Sie
+          die Bestelldetails und vervollständigen Sie die Rechnungs­anschrift.
+        </p>
+
+        <div class="grid" style="grid-template-columns: 1fr; gap: var(--sp-6);">
+
+          <article class="card" aria-labelledby="cart-title">
+            <h2 id="cart-title" class="card__title">Bestellübersicht</h2>
+            <div class="table-wrap">
+              <table class="data">
+                <caption>Ausgewählter Tarif</caption>
+                <thead>
+                  <tr><th scope="col">Position</th><th scope="col">Beschreibung</th><th scope="col">Preis</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span data-plan-name>Pro-Lizenz</span></td>
+                    <td><span data-plan-desc>Einzelplatzlizenz, jederzeit kündbar</span></td>
+                    <td><span data-plan-price>€ 9,00 / Monat</span></td>
+                  </tr>
+                  <tr>
+                    <td>USt. (20 %)</td>
+                    <td>USt. wird mit Rechnung gesondert ausgewiesen.</td>
+                    <td>inkl.</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="2"><strong>Gesamt fällig heute</strong></td>
+                    <td><strong data-plan-total>€ 9,00</strong></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <p>
+              <small>14 Tage Probezeit, kostenlose Kündigung in den ersten zwei Wochen.
+                Mehr in den <a href="license.html#preise">AGB</a> und in der
+                <a href="privacy.html">Datenschutzerklärung</a>.</small>
+            </p>
+          </article>
+
+          <article class="card" aria-labelledby="form-title">
+            <h2 id="form-title" class="card__title">Rechnungsanschrift</h2>
+            <form data-validate aria-describedby="form-hint">
+              <p id="form-hint" class="form-field__hint">
+                Pflichtfelder sind mit <strong aria-hidden="true">*</strong> markiert. Ihre
+                Daten werden ausschließlich für Vertragsabwicklung und Rechnungslegung verarbeitet.
+              </p>
+
+              <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: var(--sp-4);">
+                <div class="form-field">
+                  <label for="firstName">Vorname <span aria-hidden="true">*</span></label>
+                  <input id="firstName" name="firstName" type="text" required autocomplete="given-name" aria-describedby="err-firstName">
+                  <span class="form-field__error" id="err-firstName" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-field">
+                  <label for="lastName">Nachname <span aria-hidden="true">*</span></label>
+                  <input id="lastName" name="lastName" type="text" required autocomplete="family-name" aria-describedby="err-lastName">
+                  <span class="form-field__error" id="err-lastName" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="email">E-Mail-Adresse <span aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" required autocomplete="email" aria-describedby="err-email hint-email">
+                <span class="form-field__hint" id="hint-email">An diese Adresse senden wir Vertragsbestätigung und Rechnung.</span>
+                <span class="form-field__error" id="err-email" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-field">
+                <label for="company">Firma <small>(optional, bei UID-Pflicht erforderlich)</small></label>
+                <input id="company" name="company" type="text" autocomplete="organization">
+              </div>
+
+              <div class="form-field">
+                <label for="uid">UID-Nummer <small>(optional)</small></label>
+                <input id="uid" name="uid" type="text" pattern="^[A-Z]{2}[0-9A-Z]+$" inputmode="text" aria-describedby="hint-uid err-uid">
+                <span class="form-field__hint" id="hint-uid">Format: 2 Großbuchstaben + Zahlen, z. B. ATU12345678.</span>
+                <span class="form-field__error" id="err-uid" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-field">
+                <label for="address">Straße und Hausnummer <span aria-hidden="true">*</span></label>
+                <input id="address" name="address" type="text" required autocomplete="street-address" aria-describedby="err-address">
+                <span class="form-field__error" id="err-address" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: var(--sp-4);">
+                <div class="form-field">
+                  <label for="zip">PLZ <span aria-hidden="true">*</span></label>
+                  <input id="zip" name="zip" type="text" required autocomplete="postal-code" inputmode="numeric" aria-describedby="err-zip">
+                  <span class="form-field__error" id="err-zip" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-field">
+                  <label for="city">Ort <span aria-hidden="true">*</span></label>
+                  <input id="city" name="city" type="text" required autocomplete="address-level2" aria-describedby="err-city">
+                  <span class="form-field__error" id="err-city" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-field">
+                  <label for="country">Land <span aria-hidden="true">*</span></label>
+                  <select id="country" name="country" required autocomplete="country" aria-describedby="err-country">
+                    <option value="">Bitte wählen</option>
+                    <option value="AT">Österreich</option>
+                    <option value="DE">Deutschland</option>
+                    <option value="CH">Schweiz</option>
+                    <option value="IT">Italien</option>
+                    <option value="FR">Frankreich</option>
+                  </select>
+                  <span class="form-field__error" id="err-country" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label style="display:flex; align-items: flex-start; gap: var(--sp-3); cursor: pointer;">
+                  <input id="terms" name="terms" type="checkbox" required style="min-width: 1.2rem; min-height: 1.2rem; margin-top: 0.25rem;">
+                  <span>Ich habe die <a href="license.html">Lizenzbedingungen</a> und die <a href="privacy.html">Datenschutzerklärung</a> gelesen und akzeptiere sie. <span aria-hidden="true">*</span></span>
+                </label>
+                <span class="form-field__error" id="err-terms" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-field">
+                <label style="display:flex; align-items: flex-start; gap: var(--sp-3); cursor: pointer;">
+                  <input id="withdrawal" name="withdrawal" type="checkbox" style="min-width: 1.2rem; min-height: 1.2rem; margin-top: 0.25rem;">
+                  <span>Ich stimme ausdrücklich zu, dass Stundara mit der Bereitstellung der Dienstleistung bereits vor Ablauf der 14-tägigen Widerrufsfrist beginnt. Mir ist bekannt, dass mein Widerrufsrecht damit gemäß § 18 FAGG erlischt.</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn--primary">Zahlungspflichtig bestellen</button>
+
+              <p hidden data-form-success role="status" aria-live="polite" tabindex="-1" style="margin-top: var(--sp-4); color: var(--c-success); font-weight: 600;">
+                Bestellung übermittelt. Sie erhalten in Kürze eine Bestätigung per E-Mail.
+                <br>(Dies ist ein Demo-Webshop. Es findet keine echte Zahlung statt.)
+              </p>
+            </form>
+          </article>
+
+          <article class="card" aria-labelledby="info-title">
+            <h2 id="info-title" class="card__title">Wichtige Hinweise</h2>
+            <ul>
+              <li><strong>Vertragsschluss:</strong> Mit Klick auf „Zahlungspflichtig bestellen" geben Sie ein Angebot ab. Der Vertrag kommt mit unserer Bestätigung per E-Mail zustande (siehe <a href="license.html#vertrag">AGB Abschnitt 2</a>).</li>
+              <li><strong>Datenschutz:</strong> Wir verarbeiten Ihre Daten nach Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung). Details in der <a href="privacy.html">Datenschutzerklärung</a>.</li>
+              <li><strong>Zahlungsabwickler:</strong> Die Abwicklung erfolgt durch Stripe Payments Europe Ltd. (Irland).</li>
+              <li><strong>Hinweis:</strong> Dies ist ein nicht-funktionaler Demo-Checkout im Rahmen einer Lehrveranstaltung. Es findet keine Zahlung statt.</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container site-footer__grid">
+      <div class="site-footer__col">
+        <h2>Produkt</h2>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="about.html">Über uns</a></li>
+          <li><a href="pricing.html">Preise</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h2>Rechtliches</h2>
+        <ul>
+          <li><a href="imprint.html">Impressum</a></li>
+          <li><a href="privacy.html">Datenschutzerklärung</a></li>
+          <li><a href="license.html">Lizenz &amp; AGB</a></li>
+          <li><a href="accessibility.html">Barrierefreiheitserklärung</a></li>
+          <li><a href="credits.html">Urheberrechtshinweise</a></li>
+          <li><a href="#" data-cookie-reopen>Cookie-Einstellungen</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h2>Kontakt</h2>
+        <ul>
+          <li>Stundara e. U.</li>
+          <li>Musterplatz 1, 1010 Wien</li>
+          <li><a href="mailto:kontakt@stundara.example">kontakt@stundara.example</a></li>
+          <li><a href="tel:+4319991234">+43 1 999 1234</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container site-footer__bottom">
+      <p>&copy; 2026 Stundara e. U. Alle Rechte vorbehalten.</p>
+      <p>Made in Wien · WCAG 2.2 AA</p>
+    </div>
+  </footer>
+
+  <aside class="cookie-banner" id="cookie-banner" role="dialog" aria-labelledby="cookie-banner-title" aria-describedby="cookie-banner-desc" tabindex="-1" hidden>
+    <div class="container cookie-banner__grid">
+      <div>
+        <h2 id="cookie-banner-title" class="visually-hidden">Cookie-Einstellungen</h2>
+        <p id="cookie-banner-desc">Wir setzen ausschließlich funktional notwendige Cookies. Für anonyme Reichweitenmessung fragen wir um deine Einwilligung. Mehr in der <a href="privacy.html">Datenschutzerklärung</a>.</p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button type="button" class="btn btn--ghost" data-consent="necessary">Nur notwendige</button>
+        <button type="button" class="btn btn--primary" data-consent="all">Statistik erlauben</button>
+      </div>
+    </div>
+  </aside>
+
+  <script src="assets/js/main.js" defer></script>
+  <script>
+    (function () {
+      "use strict";
+      var params = new URLSearchParams(window.location.search);
+      var plan = params.get("plan") === "free" ? "free" : "pro";
+      var data = {
+        pro:  { name: "Pro-Lizenz",  desc: "Einzelplatzlizenz, jederzeit kündbar", price: "€ 9,00 / Monat", total: "€ 9,00" },
+        free: { name: "Free-Plan",   desc: "Dauerhaft kostenlos, keine Verpflichtung", price: "€ 0,00",            total: "€ 0,00" }
+      }[plan];
+      var setText = function (sel, text) {
+        var el = document.querySelector(sel);
+        if (el) el.textContent = text;
+      };
+      setText("[data-plan-name]",  data.name);
+      setText("[data-plan-desc]",  data.desc);
+      setText("[data-plan-price]", data.price);
+      setText("[data-plan-total]", data.total);
+    })();
+  </script>
+</body>
+</html>
