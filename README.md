@@ -48,8 +48,7 @@ stundara/
 │   ├── css/             Stylesheets (Design-System + Komponenten)
 │   ├── js/              kleine JS-Module (Mobile-Menu, Cookie-Banner)
 │   └── img/             Bilder + SVG-Logo
-├── licenses/            Lizenztexte (OFL, MIT, ISC, etc.)
-└── docs/a11y-evidence/  WAVE-, AXE- und Lighthouse-Reports
+└── licenses/            Lizenztexte (OFL, ISC)
 ```
 
 ## Quellen & Medien
