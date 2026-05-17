@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,400&display=swap">
   <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 </head>
 <body>
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
@@ -86,7 +87,7 @@
     <section class="section" style="background: var(--c-bg-alt);" aria-labelledby="compare-title">
       <div class="container">
         <h2 id="compare-title">Im Detail vergleichen</h2>
-        <div class="table-wrap">
+        <div class="table-wrap" tabindex="0" role="region" aria-label="Funktionsvergleich Free und Pro">
           <table class="data">
             <caption>Funktionsvergleich Free vs. Pro</caption>
             <thead>
@@ -183,7 +184,7 @@
     </div>
   </footer>
 
-  <aside class="cookie-banner" id="cookie-banner" role="dialog" aria-labelledby="cookie-banner-title" aria-describedby="cookie-banner-desc" tabindex="-1" hidden>
+  <aside class="cookie-banner" id="cookie-banner" role="region" aria-labelledby="cookie-banner-title" aria-describedby="cookie-banner-desc" tabindex="-1" hidden>
     <div class="container cookie-banner__grid">
       <div>
         <h2 id="cookie-banner-title" class="visually-hidden">Cookie-Einstellungen</h2>

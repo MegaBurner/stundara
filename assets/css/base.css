@@ -19,6 +19,7 @@
   --c-accent-h:     #8E481F;
   --c-focus:        #2F4536; /* deutlicher Fokus-Ring */
   --c-border:       #C8C2B0;
+  --c-border-input: #6F6A5B; /* Formularfeld-Rahmen — Kontrast ~5.4:1 zu Weiß (WCAG 2.2 SC 1.4.11) */
   --c-error:        #8C2020; /* AA-konform auf hellem BG */
   --c-success:      #2F5A2F;
 
@@ -314,7 +315,7 @@ small { font-size: var(--fs-sm); color: var(--c-text-muted); }
 .form-field select {
   padding: var(--sp-3);
   font: inherit;
-  border: 2px solid var(--c-border);
+  border: 2px solid var(--c-border-input);
   border-radius: var(--radius-md);
   background: var(--c-surface);
   color: var(--c-text);
